@@ -25,12 +25,12 @@ namespace MvcOnlineTicariOtomasyon.Models.Sınıflar
         public bool Durum { get; set; }
 
         [Column(TypeName = "Varchar")]
-        [StringLength(300]
+        [StringLength(300)]
         public string UrunGörsel { get; set; }
 
 
         public Kategori Kategori { get; set; }
-        public SatisHareket SatisHareket { get; set; }
+        public ICollection<SatisHareket> SatisHarekets { get; set; }
 
     }
 }

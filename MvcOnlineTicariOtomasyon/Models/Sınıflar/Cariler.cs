@@ -29,6 +29,7 @@ namespace MvcOnlineTicariOtomasyon.Models.Sınıflar
         [StringLength(20)]
         public string CariMail { get; set; }
 
-        public SatisHareket SatisHareket { get; set; }
+        public ICollection<SatisHareket> SatisHarekets { get; set; }
+
     }
 }
